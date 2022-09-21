@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "slots.h"
 #include "object.h"
-#include "utils.h"
+
 #include <iostream>
 
 
@@ -17,7 +17,7 @@ int main()
 	RenderWindow window(VideoMode::getDesktopMode(), "Game");
 	Event event;
 	Mouse mouse;
-	Utils utils;
+
 	Vector2f mousePos;
 	Vector2f adjMousePos;
 	Vector2f negAdjMousePos;
