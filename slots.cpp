@@ -87,8 +87,12 @@ void Slots::fill()
 
 void Slots::clear()
 {
-	filled = false;
 	removeFromStack();
+
+	if (stackSize == 0)
+	{
+		filled = false;	
+	}
 }
 
 void Slots::addToStack()

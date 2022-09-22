@@ -25,12 +25,18 @@ private:
 public: 
 	Inventory();
 	void clearInv();
+	void clearSlot(int column, int row);
 	void sortInv(std::vector<Object*>& obj);
 	Vector2f placeInv(Object* obj, std::vector<Object*>& objList);
 	bool fullInv();
 	int returnInvObj(Vector2f inv_pos, std::vector<Object*>& obj);
 	int getRows();
 	int getColumns();
+	int getCurrentRow();
+	int getCurrentColumn();
+	Vector2f getPosition(int column, int row);
+	void fill(int column, int row);
+	bool isFilled(int column, int row);
 	void draw(RenderTarget& target);
 	void drawText(RenderTarget& target);
 	void mouseoverHighlight(Vector2f position);

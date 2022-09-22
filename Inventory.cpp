@@ -24,6 +24,11 @@ void Inventory::clearInv()
 	}
 }
 
+void Inventory::clearSlot(int column, int row)
+{
+	inv[column][row].clear();
+}
+
 
 
 void Inventory::sortInv(std::vector<Object*>& obj)
@@ -139,6 +144,31 @@ int Inventory::getRows()
 int Inventory::getColumns()
 {
 	return columns;
+}
+
+int Inventory::getCurrentRow()
+{
+	return invRow;
+}
+
+int Inventory::getCurrentColumn()
+{
+	return invCol;
+}
+
+Vector2f Inventory::getPosition(int column, int row)
+{
+	return inv[column][row].getPosition();
+}
+
+void Inventory::fill(int column, int row)
+{
+	inv[column][row].fill();
+}
+
+bool Inventory::isFilled(int column, int row)
+{
+	return inv[column][row].isFilled();
 }
 
 void Inventory::draw(RenderTarget& target)

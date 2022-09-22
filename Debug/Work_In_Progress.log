@@ -1,19 +1,2 @@
-﻿  object.cpp
-D:\Visual Studio stuff\Projekts\Work_in_Progress\object.cpp(5,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-D:\Visual Studio stuff\Projekts\Work_in_Progress\object.cpp(5,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-  utils.cpp
-D:\Visual Studio stuff\Projekts\Work_in_Progress\utils.cpp(95,21): warning C4018: '<': signed/unsigned mismatch
-  Work_In_Progress.cpp
-  Generating Code...
-D:\Visual Studio stuff\Projekts\Work_in_Progress\utils.cpp(64): warning C4715: 'Utils::placeInv': not all control paths return a value
-D:\Visual Studio stuff\Projekts\Work_in_Progress\object.cpp(100): warning C4715: 'Object::compareType': not all control paths return a value
-D:\Visual Studio stuff\Projekts\Work_in_Progress\object.cpp(108): warning C4715: 'Object::compareType': not all control paths return a value
+﻿  Game.cpp
   Work_In_Progress.vcxproj -> D:\Visual Studio stuff\Projekts\Work_in_Progress\Debug\Work_In_Progress.exe
